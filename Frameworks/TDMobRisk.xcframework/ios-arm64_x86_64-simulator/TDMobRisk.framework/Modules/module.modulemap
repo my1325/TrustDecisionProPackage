@@ -1,0 +1,6 @@
+framework module TDMobRisk {
+  umbrella header "TDMobRisk.h"
+
+  export *
+  module * { export * }
+}

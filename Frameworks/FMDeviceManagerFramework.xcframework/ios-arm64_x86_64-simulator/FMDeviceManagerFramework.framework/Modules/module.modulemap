@@ -1,0 +1,6 @@
+framework module FMDeviceManagerFramework {
+  umbrella header "FMDeviceManager.h"
+   
+  export *
+  module * { export * }
+}
