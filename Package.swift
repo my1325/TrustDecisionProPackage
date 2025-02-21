@@ -9,8 +9,9 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "TrustDecisionPro",
-            targets: ["TDMobRisk", "TDCorePlugin", "FMDeviceManagerFramework"]
+            targets: ["TDMobRisk"]
         ),
+        .library(name: "TDCorePlugin", targets: ["TDCorePlugin"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -23,9 +24,9 @@ let package = Package(
             name: "TDCorePlugin",
             path: "Frameworks/TDCorePlugin.xcframework"
         ),
-        .binaryTarget(
-            name: "FMDeviceManagerFramework",
-            path: "Frameworks/FMDeviceManagerFramework.xcframework"
-        ),
+//        .binaryTarget(
+//            name: "FMDeviceManagerFramework",
+//            path: "Frameworks/FMDeviceManagerFramework.xcframework"
+//        ),
     ]
 )
